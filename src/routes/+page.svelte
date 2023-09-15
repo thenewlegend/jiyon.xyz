@@ -51,7 +51,7 @@
     
     <div class="links">
       <a href="https://www.linkedin.com/in/jiyon/" target="_blank"><img class="linkedin" src="/linkedin.png" alt="LinkedIn"></a>
-      <a href="https://www.linkedin.com/in/jiyon/" target="_blank"><img class="github" src="/github.png" alt="LinkedIn"></a>
+      <a href="https://github.com/thenewlegend" target="_blank"><img class="github" src="/github.png" alt="LinkedIn"></a>
       
     </div>
 
