@@ -1,47 +1,13 @@
 <script>
-  import { onMount, onDestroy } from 'svelte';
 
-  let videoPlaying = true;
-
-  onMount(() => {
-    // Function to check if the video is playing
-    function checkVideoPlaying() {
-      videoPlaying = !video.paused && !video.ended;
-    }
-
-    // Get a reference to the video element
-    const video = document.getElementById('top-video-phone');
-
-    // Check if the video is playing when it's loaded
-    video.addEventListener('loadeddata', checkVideoPlaying);
-
-    // Check if the video is playing periodically
-    const interval = setInterval(checkVideoPlaying, 1000);
-
-    onDestroy(() => {
-      // Clean up event listeners and intervals
-      video.removeEventListener('loadeddata', checkVideoPlaying);
-      clearInterval(interval);
-    });
-  });
 </script>
 
 <main>
   <div id="container">
 
-  {#if videoPlaying}
-    <!-- Display the video if it's playing -->
-    <div id="video-container">
-      <video id="top-video-phone" src="/bg.mp4" loop autoplay>
-        <track kind="captions" src="" label="English Captions" default>
-      </video>
-    </div>
-  {:else}
-    <!-- Display an image if the video is not playing -->
-    <div id="image-container">
-      <img id="static" src="/static-pic.jpg" alt=" "/>
-    </div>
-  {/if}
+  <div id="image-container">
+    <img id="gif" src="/bg.gif" alt=" "/>
+  </div>
 
   <div class="hi">
     <h1>Hi, I'm Jiyon</h1>
@@ -71,15 +37,7 @@
     background-color: black;
   }
 
-  video {
-    object-fit: contain;
-    width: 400px;
-    filter: brightness(60%);
-    opacity: 0.9;
-    clip-path: ellipse(35% 50% at 50% 50%);
-  }
-
-  #static {
+  #gif {
     object-fit: contain;
     width: 400px;
     filter: brightness(60%);
