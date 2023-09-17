@@ -5,8 +5,11 @@
 <main>
   <div id="container">
 
-  <div id="image-container">
-    <img id="gif" src="/bg.gif" alt=" "/>
+  <div id="video-container">
+    <video id="gif" src="/bg.mp4" loop playsinline muted autoplay webkit-playsinline x5-playsinline alt="Descriptive text for the video">
+      <track kind="captions" src=" " label="English Captions" default>
+    </video>
+    
   </div>
 
   <div class="hi">
