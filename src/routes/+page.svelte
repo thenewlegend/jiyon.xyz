@@ -1,13 +1,9 @@
-<script>
-
-</script>
-
 <main>
   <div id="container">
 
   <div id="video-container">
-    <video id="gif" src="/bg.mp4" loop playsinline muted autoplay webkit-playsinline x5-playsinline alt="Descriptive text for the video">
-      <track kind="captions" src=" " label="English Captions" default>
+    <video id="video" src="/bg.mp4" loop playsinline muted autoplay webkit-playsinline x5-playsinline alt="">
+      <track kind="captions" src=" " label="" default>
     </video>
     
   </div>
@@ -30,8 +26,6 @@
 </main>
 
 <style>
-  /* Your CSS styles for video, image, and other elements here */
-
   #container {
     display: flex;
     margin-top: 150px;
@@ -40,7 +34,7 @@
     background-color: black;
   }
 
-  #gif {
+  #video {
     object-fit: contain;
     width: 400px;
     filter: brightness(60%);
@@ -138,5 +132,4 @@
   }
 
 }
-
 </style>
